@@ -16,9 +16,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Aim();
-    }
-    private void FixedUpdate()
-    {
         Move();
     }
 
@@ -33,7 +30,8 @@ public class PlayerController : MonoBehaviour
     public void Move()
     {
         Vector2 moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        moveDirection *= moveSpeed;
+        moveDirection.Normalize();
+        moveDirection *= Mathf.Lerp(0f, moveSpeed, Time.deltaTime);
         body.position += moveDirection;
     }
 }
