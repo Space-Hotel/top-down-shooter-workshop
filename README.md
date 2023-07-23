@@ -1,6 +1,9 @@
 # top-down-shooter-workshop
 Unity проект который мы делаем в серии воркшопов, как он есть на момент последнего занятия
 
+## Документация мануального дебагинга в Unity
+https://docs.unity3d.com/Manual/ManagedCodeDebugging.html
+
 ## Сцена пустая, что делать?
 Если вы открыли проект и перед вами пустая сцена, выглядящая вот так:
 ![1](https://github.com/Zoidez/top-down-shooter-workshop/assets/5404036/55b3a2e9-4ed0-4792-a116-2fa80077d544)
