@@ -12,4 +12,10 @@ public class AudioManager : MonoBehaviour
         backgroundMusic = audioSources[0];
         gameOverMusic = audioSources[1];
     }
+
+    public void PlayGameOver()
+    {
+        backgroundMusic.Stop();
+        gameOverMusic.Play();
+    }
 }

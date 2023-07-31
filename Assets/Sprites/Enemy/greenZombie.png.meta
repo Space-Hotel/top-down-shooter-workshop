@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,17 +112,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 61
-        width: 121
+        width: 61
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 895fab1effa627ad0800000000000000
-      internalID: -2705982778859915880
+      spriteID: a02d5f1b145b6ac488e9eda088a93ef0
+      internalID: -545313749
       vertices: []
       indices: 
       edges: []
@@ -131,8 +131,8 @@ TextureImporter:
       name: greenZombie_1
       rect:
         serializedVersion: 2
-        x: 119
-        y: 3
+        x: 61
+        y: 63
         width: 59
         height: 62
       alignment: 0
@@ -140,10 +140,10 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7031322f4782be3f0800000000000000
-      internalID: -870557620222356729
+      spriteID: 827918a1f0f15844ebda1edf72777afc
+      internalID: 1481050758
       vertices: []
       indices: 
       edges: []
@@ -152,19 +152,19 @@ TextureImporter:
       name: greenZombie_2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 64
-        width: 58
-        height: 61
+        x: 121
+        y: 63
+        width: 57
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 53e85f052a7084730800000000000000
-      internalID: 3983442264133570101
+      spriteID: 5aed46f373e8df745a011c71cf3c746a
+      internalID: 1816036163
       vertices: []
       indices: 
       edges: []
@@ -175,17 +175,59 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bee225c27924d1448c58cf974498069
+      internalID: -1340005825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greenZombie_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
         height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8add63e3a2966e00800000000000000
-      internalID: 1037677996748429965
+      spriteID: 05b7b40537df27442809058c689d1890
+      internalID: 1589218119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greenZombie_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b6bfb47b1dcc34d94a092f83abc842
+      internalID: -1873531227
       vertices: []
       indices: 
       edges: []
@@ -193,14 +235,20 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5448c04e949c33147a046c920e813c08
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      greenZombie_0: -545313749
+      greenZombie_1: 1481050758
+      greenZombie_2: 1816036163
+      greenZombie_3: -1340005825
+      greenZombie_4: 1589218119
+      greenZombie_5: -1873531227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
