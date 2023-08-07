@@ -56,5 +56,10 @@ public class PlayerController : MonoBehaviour
     public void UpdateHealth()
     {
         healthbar.fillAmount = health / maxHealth;
+        if (health <= 0)
+        {
+            GameManager.main.GameOver();
+            Destroy(gameObject);
+        }
     }
 }

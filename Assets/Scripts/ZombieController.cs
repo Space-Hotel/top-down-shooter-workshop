@@ -51,6 +51,7 @@ public class ZombieController : MonoBehaviour
     {
         if (!isDead)
         {
+            Random.Range(rayCount, rayAngle);
             if ( health <= 0)
             {
                 collider.enabled = false;
@@ -85,7 +86,7 @@ public class ZombieController : MonoBehaviour
         Vector2 direction = (Vector3)target - transform.position;
         transform.rotation = Quaternion.LookRotation(Vector3.forward, direction);
         Vector2 newPos = body.position;
-        float speed = Mathf.Lerp(0, moveSpeed, Time.deltaTime);
+        float speed = moveSpeed * Time.deltaTime;
         newPos += direction.normalized * speed;
         body.position = newPos;
     }
@@ -93,13 +94,13 @@ public class ZombieController : MonoBehaviour
     private bool LookForPlayer()
     {
         // Calculate the angle between rays
-        float andgleStep = rayAngle / rayCount;
+        float angleStep = rayAngle / rayCount;
 
         // Loop throught each ray
         for (int i = 0; i < rayCount; i++)
         {
             // Calculate the current angle of the ray
-            float angle = transform.eulerAngles.z - rayAngle / 2f + andgleStep * i + 90f;
+            float angle = transform.eulerAngles.z - rayAngle / 2f + angleStep * i + 90f;
 
             // Convert Euler angle to Radians
             float angleRadians = angle * Mathf.Deg2Rad;
