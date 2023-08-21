@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public static GameManager main;
     public AudioManager audioManager;
     public TextMeshProUGUI gameOverText;
+
+    [HideInInspector]
+    public bool gamePaused = false;
     void Start()
     {
         main = this;
@@ -17,7 +20,11 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gamePaused = !gamePaused;
+            Time.timeScale = (gamePaused) ? 0f : 1f;
+        }
     }
 
     public void GameOver()

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public WeaponController weaponController;
+    public GrenadeThrowingController grenadeThrowingController;
     public Image healthbar;
     public float maxHealth = 100f;
     public float health = 100f;
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        Aim();
+        if (!GameManager.main.gamePaused) Aim();
         Move();
     }
 
@@ -60,6 +62,17 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.main.GameOver();
             Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameObject collidedObject = collision.gameObject;
+        if (collidedObject.CompareTag("Health Pack"))
+        {
+            health = maxHealth;
+            UpdateHealth();
+            Destroy(collidedObject);
         }
     }
 }

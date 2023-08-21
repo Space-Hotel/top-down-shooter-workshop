@@ -9,6 +9,8 @@ TagManager:
   - Bullet
   - Health Pack
   - Enemy
+  - Ammo Pack
+  - Grenade Pack
   layers:
   - Default
   - TransparentFX
